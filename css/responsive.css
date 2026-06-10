@@ -1,0 +1,89 @@
+
+@media (max-width: 992px){
+    .hero{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .project-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px){
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    section{
+        padding:60px 7%;
+    }
+
+}
+
+/*.hamburger-btn {
+    display: none;          
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+.hamburger-btn span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: white;     
+    transition: all 0.3s;   
+}
+
+/* ── Mobile screens (phones) ── */
+@media (max-width: 768px) {
+
+  
+    .hamburger-btn {
+        display: flex;
+    }
+
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;           
+        left: 0;
+        right: 0;
+        background: #1a1a2e; 
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* Animate the 3 lines into an X when open */
+    .hamburger-btn.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .hamburger-btn.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-btn.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+}

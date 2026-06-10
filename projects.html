@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divhani Thiba | Projects</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <section class="projects-section">
+        <h1>My Projects</h1>
+
+        <div class="project-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="3d-modeling">Blender</button>
+            <button class="filter-btn" data-filter="animation">Animation</button>
+            <button class="filter-btn" data-filter="development">Unity&amp;Code</button>
+            <!-- I learnt that & should be written as &amp; in HTML -->
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="animation">
+                <video controls>
+                    <source src="Videos/Game Character.mp4" type="video/mp4">
+                </video>
+                <h3>Game Character Animation</h3>
+                <p>I created this character animation using Blender, showcasing my skills in 3D modeling and animation. The project involved designing a character, rigging it for animation, and creating a short animation sequence to demonstrate its movement and personality.</p>
+            </div>
+
+            <div class="project-card" data-category="animation">
+                <video controls>
+                    <source src="Videos/Procedural Animation.mp4" type="video/mp4">
+                </video>
+                <h3>Procedural Animation</h3>
+                <p>I created this procedural animation using Blender, showcasing my skills in 3D modeling and animation. The project involved creating a system of nodes and shaders that would generate animations automatically, allowing for dynamic and unpredictable movements.</p>
+            </div>
+
+            <div class="project-card" data-category="3d-modeling">
+                <video controls>
+                    <source src="Videos/Sideplate Model.mp4" type="video/mp4">
+                </video>
+                <h3>Sideplate Model</h3>
+                <p>I used Blender to create this 3D model of my roommates sideplate, demonstrating my proficiency in 3D modeling and texturing. The project involved creating a detailed and realistic model of a sideplate, applying textures to give it a lifelike appearance, and rendering it to showcase my skills in 3D design and visualization.</p>
+            </div>
+
+            <div class="project-card" data-category="development"> 
+               <img src="images/Unity.png" alt="Unity Game">
+                <h3>Unity Game</h3>
+                <p>I worked on this complex 3D platformer game using Unity, showcasing my skills in game development and programming. The project involved designing game levels, implementing player controls, and creating engaging gameplay mechanics.</p>
+                  <a href="https://github.com/UnaSwims22/3DGame.git" target="_blank">View on GitHub</a>
+
+            </div>
+
+            <div class="project-card" data-category="development">
+                <img src="images/CODE.png" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+                <p>I built this portfolio website using HTML, CSS, and JavaScript, demonstrating my skills in web development and design. The project involved creating a visually appealing and user-friendly website to showcase my work and skills as a designer and developer.</p>
+            </div>
+
+            <div class="project-card" data-category="animation">
+                <video controls>
+                  <source src="Videos/Body and Lipsync.mp4" type="video/mp4">
+                </video>
+                <h3>Blender Exam Animation</h3>
+                <p> We were tasked with animation premade assets so we could focus on charcter perfomance and lipsync.</p>
+            </div>
+
+            <div class="project-card" data-category="3d-modeling">
+                <img src="images/RayGun model.png" alt="RayGun Model">
+                <h3>RayGun Model</h3>
+                <p>I created this 3D model of a raygun using Blender, showcasing my skills in 3D modeling. </p>
+            </div>
+
+            
+            <div class="project-card" data-category="development">
+                <video controls>
+                    <source src="Videos/UI Assignment.mp4" type="video/mp4">
+                </video>
+                <h3>(Unity Game playthrough)</h3>
+                <p>This -buggy early stage- project helped me understand user experience design principles and how to apply them to game development.</p>
+                <a href="https://github.com/Divhani-TN/User-Experience-Assignment.git" target="_blank">View on GitHub</a>
+            </div>
+
+           <div class="project-card" data-category="development">
+                <video controls>
+                    <source src="Videos/Thatha-Tribe Playthrough.mp4" type="video/mp4">
+                </video>
+                <h3>( Thatha-Tribe playthrough)</h3>
+                <p>I was part of the team that created Thatha-Tribe i mostly handled Ui and some asset creation as well as thepartenering code.</p>
+                <a href="https://github.com/Divhani-TN/tHATHA.git" target="_blank">View on GitHub</a>
+            </div> 
+        </div>
+    </section>
+
+      
+    <script src="js/navigation.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/project-filtering.js"></script>
+
+   <!--this is the code that handles the expanded view for my website when you click on the project card they're supposed to expand-->
+    <script>
+        document.querySelectorAll('.project-card video, .project-card iframe').forEach(function(el) {
+            el.addEventListener('click', function() {
+                el.classList.toggle('expanded');
+            });
+        });
+    </script>
+ 
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Divhani Thiba</p>
+    </footer>
+
+</body>
+
+</html>

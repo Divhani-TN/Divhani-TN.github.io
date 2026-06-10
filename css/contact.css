@@ -1,0 +1,143 @@
+  header {
+        background-color: #1F2933;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        animation: fadeIn 2s ease-in-out;
+        margin: 25px;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(1, 39, 68, 0.5);
+    }
+body.dark-mode {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+body.dark-mode nav {
+    background-color: #1E1E1E;
+}
+ 
+ form {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 120px;
+    padding-top: 10px;
+  
+    
+}
+
+input,
+textarea {
+    padding: 10px;
+    resize:none;
+    border-radius: 8px;
+}
+.shake {
+    display: center;
+    animation: subtleShake 2s infinite;
+    
+}
+.contact-info {
+    list-style: none;
+    padding: 0px;
+    max-width: 600px;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+  
+}
+
+.contact-info li {
+    background: #2a276751;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;  
+    text-align:left;
+
+}
+.contact-info li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgb(37, 100, 235);
+}
+
+.contact-info strong {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #64748b;
+    margin-bottom: 0.3rem;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0062ff;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #2563eb;
+}
+#success-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(150px); /* Negative value means the content starts hidden below screen */
+    min-width: 300px;
+    padding: 1rem 1.5rem;
+    background: #019d42;        
+    color: white;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.4s ease;  
+    z-index: 9999;
+}
+
+
+#success-banner.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+@keyframes subtleShake {
+    0%, 90%, 100% {
+        transform: rotate(0deg);
+    }
+    92% {
+        transform: rotate(-2deg);
+    }
+    94% {
+        transform: rotate(2deg);
+    }
+    96% {
+        transform: rotate(-2deg);
+    }
+    98% {
+        transform: rotate(2deg);
+    }
+
+
+    }
+footer{
+    text-align:center;
+    padding: 30px;
+    background-color: #1F2933;
+    color: #ffffff;
+    }
+
+
+ 
